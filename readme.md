@@ -38,6 +38,8 @@ Users can provide self-defined criteria functions. In this demo, the loop stops 
 
 ## Prepare data
 
+In this demo, 2-d data file is used. The file contains n lines, each line is in the format of xi,yi.
+
 ```bash
 # create folder to store the Input data
 hdfs dfs -mkdir -p km1
@@ -54,3 +56,6 @@ hadoop jar demo.jar km1 output
 hdfs dfs -cat /ourput/part-00000
 ```
 
+The result displays the total iteration number, convergence status, and the final Kmeans centers.
+
+![alt text](https://github.com/Yuliang795/KMeans_MapReduce/blob/main/logistics_img/result.png)
