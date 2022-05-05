@@ -51,6 +51,7 @@ hdfs dfs -copyFromLocal 'data_points.txt' km1
 
 ```bash
 # execute the jar file using hadoop jar
+# hadoop jar <jar file> <input path> <output path>
 hadoop jar demo.jar km1 output
 # check the result in the output file
 hdfs dfs -cat /ourput/part-00000
@@ -59,3 +60,4 @@ hdfs dfs -cat /ourput/part-00000
 The result displays the total iteration number, convergence status, and the final Kmeans centers.
 
 ![alt text](https://github.com/Yuliang795/KMeans_MapReduce/blob/main/logistics_img/result.png)
+
